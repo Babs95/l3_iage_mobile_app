@@ -9,6 +9,7 @@ import 'package:l3iage_app/commons/theme_config.dart';
 import 'package:l3iage_app/route/routes.dart';
 import 'package:l3iage_app/views/accueil/accueil_screen.dart';
 import 'package:l3iage_app/views/onboarding/onboarding_screen.dart';
+import 'package:l3iage_app/views/produits/produit_screen.dart';
 import 'package:l3iage_app/views/splash_screen.dart';
 
 void main() {
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
       home: const SplashScreen(),
       routes: {
         Routes.home: (BuildContext context) => const AccueilScreen(),
-        Routes.onBoarding: (BuildContext context) => const OnBoardingScreen()
+        Routes.onBoarding: (BuildContext context) => const OnBoardingScreen(),
+        //Routes.produit:  (BuildContext context) => ProduitScreen()
       },
       onUnknownRoute: (RouteSettings settings) {
         return MaterialPageRoute(
